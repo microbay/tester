@@ -2,16 +2,17 @@
 
 
 var app = require('../../server');
-var request = require('supertest').agent(app.listen());
+var request = require('supertest');
 
 var expect = require('chai').expect;
 var should = require('should');
 
 
 describe('GET /', function(){
-  it('should respond with 403', function(done){
-    request
-    .get('/')
-    .expect(403, done);
+
+  var agent = request('http://localhost:7777')
+
+  it('should respond with 403 and moreInfo link', function(done){
+    agent.get('/').expect(403, done);
   });
 });
