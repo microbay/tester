@@ -30,7 +30,7 @@
     "start": "NODE_ENV=production node --harmony src/server.js",
     "dev": "NODE_ENV=development node --harmony src/server.js",
     "local": "NODE_ENV=local nodemon --harmony src/server.js",
-    "test": "NODE_ENV=test mocha --harmony ./src/**/*.spec.js",
+    "test": "NODE_ENV=test mocha --watch --harmony ./test/**/*.spec.js",
     "watch": "npm-watch"
   }
 }
