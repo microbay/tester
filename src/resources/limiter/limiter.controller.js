@@ -8,7 +8,7 @@ var client = Redis.createClient();
 var limiter = RateLimiter({
   redis: client,
   //namespace: "NodeJSLimiter" ,// optional: allows one redis instance to handle multiple types of rate limiters. defaults to "rate-limiter-{string of 8 random characters}"
-  interval: 60000,
+  interval: 10000,
   maxInInterval: 3,
   minDifference: 100
 });

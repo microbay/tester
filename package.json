@@ -9,6 +9,7 @@
     "koa-router": "^4.2.0",
     "lodash": "^3.5.0",
     "redis": "^0.12.1",
+    "rolling-rate-limiter": "^0.1.2",
     "thunkify": "^2.1.2"
   },
   "devDependencies": {
